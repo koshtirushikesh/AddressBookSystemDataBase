@@ -36,3 +36,6 @@ UPDATE AddressBook_DB SET State = 'Goa' WHERE FirstName = 'Ron'
 UPDATE AddressBook_DB SET Zip = 400098 WHERE FirstName = 'Rushi'
 UPDATE AddressBook_DB SET PhoneNumber = 9664977978 WHERE FirstName = 'Rushi'
 UPDATE AddressBook_DB SET Email = 'koshti3.gmail' WHERE FirstName = 'Rushi'
+
+-- UC5 Delete contact
+DELETE FROM AddressBook_DB WHERE FirstName = 'Rushi'
