@@ -28,3 +28,11 @@ VALUES
 ('Ron','Koshti','3/5 Jay Bhavani Chawl','Mumbai','Maharastra',400078,1234567890,'rushikesh.kohti.@gmail.com'),
 ('Roy','Koshti','3/5 Jay Bhavani Chawl','Mumbai','Maharastra',400078,1234567890,'rushikesh.kohti.@gmail.com')
 
+-- UC4 Edit Contact
+UPDATE AddressBook_DB SET LastName = 'Ko' WHERE FirstName = 'Rushi'
+UPDATE AddressBook_DB SET Address = 'Room no5 chawl no3 ' WHERE FirstName = 'Rushi'
+UPDATE AddressBook_DB SET City = 'Sangali' WHERE FirstName = 'Roy'
+UPDATE AddressBook_DB SET State = 'Goa' WHERE FirstName = 'Ron'
+UPDATE AddressBook_DB SET Zip = 400098 WHERE FirstName = 'Rushi'
+UPDATE AddressBook_DB SET PhoneNumber = 9664977978 WHERE FirstName = 'Rushi'
+UPDATE AddressBook_DB SET Email = 'koshti3.gmail' WHERE FirstName = 'Rushi'
