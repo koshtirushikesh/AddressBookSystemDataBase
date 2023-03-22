@@ -43,3 +43,5 @@ DELETE FROM AddressBook_DB WHERE FirstName = 'Rushi'
 -- UC6 Retrive By City or State
 SELECT * FROM AddressBook_DB WHERE City = 'Mumbai'
 SELECT * FROM AddressBook_DB WHERE State = 'Maharastra'
+
+-- UC7 Size of Address book 
