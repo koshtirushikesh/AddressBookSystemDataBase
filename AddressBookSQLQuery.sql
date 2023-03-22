@@ -18,4 +18,13 @@ PhoneNumber BIGINT NOT NULL,
 Email VARCHAR(50) NOT NULL
 );
 
+SELECT * FROM AddressBook_DB
+
+-- UC3 Inserting new Contact 
+INSERT INTO AddressBook_DB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email)
+VALUES
+('Rushi','Koshti','3/5 Jay Bhavani Chawl','Mumbai','Maharastra',400078,1234567890,'rushikesh.kohti.@gmail.com'),
+('Rutik','Koshti','3/5 Jay Bhavani Chawl','Mumbai','Maharastra',400078,1234567890,'rushikesh.kohti.@gmail.com'),
+('Ron','Koshti','3/5 Jay Bhavani Chawl','Mumbai','Maharastra',400078,1234567890,'rushikesh.kohti.@gmail.com'),
+('Roy','Koshti','3/5 Jay Bhavani Chawl','Mumbai','Maharastra',400078,1234567890,'rushikesh.kohti.@gmail.com')
 
