@@ -39,3 +39,7 @@ UPDATE AddressBook_DB SET Email = 'koshti3.gmail' WHERE FirstName = 'Rushi'
 
 -- UC5 Delete contact
 DELETE FROM AddressBook_DB WHERE FirstName = 'Rushi'
+
+-- UC6 Retrive By City or State
+SELECT * FROM AddressBook_DB WHERE City = 'Mumbai'
+SELECT * FROM AddressBook_DB WHERE State = 'Maharastra'
