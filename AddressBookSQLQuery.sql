@@ -54,5 +54,38 @@ SELECT COUNT (*) FROM AddressBook_DB WHERE State = 'Maharastra' GROUP BY State
 SELECT COUNT (*) AS CityCount,City FROM AddressBook_DB GROUP BY City
 SELECT COUNT (*) AS StateCount,State FROM AddressBook_DB GROUP BY State
 
+-- UC8 Sort By First Name For City
+SELECT * FROM AddressBook_DB WHERE City = 'Sangali' ORDER BY FirstName
+
+-- UC9 Add coloum to Address Book Table
+ALTER TABLE AddressBook_DB ADD AddressBookType VARCHAR(50)
+ALTER TABLE AddressBook_DB ADD AddressBookName VARCHAR(50)
+
+UPDATE AddressBook_DB
+SET AddressBookType = 'Friend'
+WHERE City = 'Mumbai'
+
+UPDATE AddressBook_DB
+SET AddressbookType = 'Profession'
+WHERE City = 'Sangali'
+
+UPDATE AddressBook_DB
+SET AddressbookName = 'Jon'
+WHERE City = 'Sangali'
+
+UPDATE AddressBook_DB
+SET AddressbookName = 'Sam'
+WHERE City = 'Mumbai'
+
+UPDATE AddressBook_DB
+SET AddressbookName = FirstName + LastName
+WHERE City = 'Sangali'
+
+-- UC10 get number of contact persons
+SELECT AddressBookType, COUNT (AddressBookType) AS NoOfContactPresent FROM AddressBook_DB GROUP BY AddressBookType
 
 
+-- UC11 add person to both Friend and Family
+INSERT INTO AddressBook_DB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email,AddressBookType,AddressBookName)
+VALUES ('Ram','Sn','jk chawle','Mumbai','Maharastra',400092,1234512345,'adiwbe.gmail.com','Friend','RamSn'),
+('Ram','Sn','jk chawle','Mumbai','Maharastra',400092,1234512345,'adiwbe.gmail.com','Family','RamSn')
