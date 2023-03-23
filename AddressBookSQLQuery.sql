@@ -80,3 +80,8 @@ WHERE City = 'Mumbai'
 UPDATE AddressBook_DB
 SET AddressbookName = FirstName + LastName
 WHERE City = 'Sangali'
+
+-- UC10 get number of contact persons
+SELECT AddressBookType, COUNT (AddressBookType) AS NoOfContactPresent FROM AddressBook_DB GROUP BY AddressBookType
+
+
