@@ -60,3 +60,23 @@ SELECT * FROM AddressBook_DB WHERE City = 'Sangali' ORDER BY FirstName
 -- UC9 Add coloum to Address Book Table
 ALTER TABLE AddressBook_DB ADD AddressBookType VARCHAR(50)
 ALTER TABLE AddressBook_DB ADD AddressBookName VARCHAR(50)
+
+UPDATE AddressBook_DB
+SET AddressBookType = 'Friend'
+WHERE City = 'Mumbai'
+
+UPDATE AddressBook_DB
+SET AddressbookType = 'Profession'
+WHERE City = 'Sangali'
+
+UPDATE AddressBook_DB
+SET AddressbookName = 'Jon'
+WHERE City = 'Sangali'
+
+UPDATE AddressBook_DB
+SET AddressbookName = 'Sam'
+WHERE City = 'Mumbai'
+
+UPDATE AddressBook_DB
+SET AddressbookName = FirstName + LastName
+WHERE City = 'Sangali'
