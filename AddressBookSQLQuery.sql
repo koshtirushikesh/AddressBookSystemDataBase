@@ -57,4 +57,6 @@ SELECT COUNT (*) AS StateCount,State FROM AddressBook_DB GROUP BY State
 -- UC8 Sort By First Name For City
 SELECT * FROM AddressBook_DB WHERE City = 'Sangali' ORDER BY FirstName
 
-
+-- UC9 Add coloum to Address Book Table
+ALTER TABLE AddressBook_DB ADD AddressBookType VARCHAR(50)
+ALTER TABLE AddressBook_DB ADD AddressBookName VARCHAR(50)
