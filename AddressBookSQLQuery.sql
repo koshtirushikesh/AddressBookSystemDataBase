@@ -85,3 +85,7 @@ WHERE City = 'Sangali'
 SELECT AddressBookType, COUNT (AddressBookType) AS NoOfContactPresent FROM AddressBook_DB GROUP BY AddressBookType
 
 
+-- UC11 add person to both Friend and Family
+INSERT INTO AddressBook_DB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email,AddressBookType,AddressBookName)
+VALUES ('Ram','Sn','jk chawle','Mumbai','Maharastra',400092,1234512345,'adiwbe.gmail.com','Friend','RamSn'),
+('Ram','Sn','jk chawle','Mumbai','Maharastra',400092,1234512345,'adiwbe.gmail.com','Family','RamSn')
